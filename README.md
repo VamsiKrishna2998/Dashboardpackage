@@ -1,8 +1,8 @@
 # DashboardProduct
- DashboardProduct contains Metrics from the TestRail application and Jira application
+ Dashboard Product contains Metrics from the TestRail application and Jira application
 
-# testrailmetrics
- testrailmetrics package display the test metrics from testRail application
+# Testrailmetrics
+ Testrail metrics package display the test metrics from testRail application
 
 # Pre-Requisite
 - NodeJs  
@@ -12,19 +12,19 @@
 - Create a node project 
 - Create a package.json file using npm init -y command
 - Install the package using below command.
-- "npm i testrailmetrics"
+  "npm i testrailmetrics"
 - install the axios using below command.
-- "npm i -D axios"
+  "npm i -D axios"
 - install the Dotenv by using bewlow commad.
-- "npm i -D dotenv"
+  "npm i -D dotenv"
 - install the axios logger using below command.
-- "npm i axios-logger"
+  "npm i axios-logger"
 - install the hotshots using bewlow command.
-- "npm i hot-shots"
+  "npm i hot-shots"
 
 # Usage
 
-# getAutomationManualCount
+# get Automation & Manual Count
 
 This functions extracts the Manual and Automation test cases count for a given project in the testrail application.
 
@@ -50,7 +50,7 @@ Pass the below arguments to the function to get the count.
     )}'''
     
 
-# PassFailCount
+# get Pass-Fail Count
 
 This functions extracts the Pass and Fail test cases count for a given project in the testrail application.
 
@@ -75,7 +75,7 @@ Pass the below arguments to the function to get the count.
       `get_cases/${project.suites[0].projectId}&suite_id=${project.suites[0].suiteId}&limit=250&offset=0`
     )}'''
 
-# getJiraOpenBugs
+# get Jira OpenBugs
 
 This function returns the open bugs present in the given jira project.
 
@@ -97,7 +97,7 @@ import {OpenBugs} from "testrailmetrics";
     console.log(result) 
  })'''
 
-# getJiraBlockers
+# get Jira Blockers
 
 This function returns the Blockers present in the given jira project.
 
@@ -119,7 +119,7 @@ import {Blockers} from "testrailmetrics";
     console.log(result) 
  })'''
 
-# getJiraBacklogCount
+# get Jira Backlog Count
 
 This function returns the Backlog Tickets present in the given jira project.
 
@@ -141,7 +141,7 @@ import {BacklogCount} from "testrailmetrics";
     console.log(result) 
  })'''
 
-# getJiraBugsPerRelease
+# get Jira BugsPerRelease
 
 This function returns the BugsPerRelease present in the Latest Release of a respective project.
 
@@ -163,7 +163,7 @@ import {BugsPerRelease} from "testrailmetrics";
     console.log(result) 
  })'''
 
-# getJiraTicketsPerRelease
+# get Jira TicketsPerRelease
 
 This function returns the TicketsPerRelease present in the Latest Release of a respective project.
 
