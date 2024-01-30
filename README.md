@@ -6,7 +6,7 @@
 
 # Pre-Requisite
 - NodeJs  
-- Visual Studio
+- Visual Studio code
 
 # Installation
 - Create a node project 
