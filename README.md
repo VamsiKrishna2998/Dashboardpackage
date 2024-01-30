@@ -1,0 +1,4 @@
+#Pre-Requisite
+
+NodeJs
+VisualCode

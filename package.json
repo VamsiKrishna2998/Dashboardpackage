@@ -1,0 +1,11 @@
+{
+  "name": "vamsidashboardpackage",
+  "version": "1.0.0",
+  "description": "dashboardpackages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vamsi",
+  "license": "ISC"
+}
