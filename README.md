@@ -12,15 +12,15 @@
 - Create a node project 
 - Create a package.json file using npm init -y command
 - Install the package using below command.
-- npm i testrailmetrics
+- "npm i testrailmetrics"
 - install the axios using below command.
-- npm i -D axios
+- "npm i -D axios"
 - install the Dotenv by using bewlow commad.
-- npm i -D dotenv
+- "npm i -D dotenv"
 - install the axios logger using below command.
-- npm i axios-logger
+- "npm i axios-logger"
 - install the hotshots using bewlow command.
-- npm i hot-shots
+- "npm i hot-shots"
 
 # Usage
 
@@ -32,7 +32,7 @@ This functions extracts the Manual and Automation test cases count for a given p
 
 Pass the below arguments to the function to get the count.
 
-- Baseurl --> The URL of the testrail instance eg(https://khanaasif.testrail.io/index.php?/api/v2)
+- Baseurl --> The URL of the testrail instance eg(https://khanaasif.testrail.io)
 - TestRailuser--> Provide the respective TestRail account email id.
 - APIkey---> API Key for the respective Testrail User generated inside TestRail application.
 - projectId-->Provide the ProjectId of respective project.
@@ -58,7 +58,7 @@ This functions extracts the Pass and Fail test cases count for a given project i
 
 Pass the below arguments to the function to get the count.
 
-- Baseurl --> The URL of the testrail instance eg(https://khanaasif.testrail.io/index.php?/api/v2)
+- Baseurl --> The URL of the testrail instance eg(https://khanaasif.testrail.io)
 - TestRailuser--> Provide the respective TestRail account email id.
 - APIkey---> API Key for the respective Testrail User generated inside TestRail application.
 - projectId-->Provide the ProjectId of respective project.
@@ -87,6 +87,16 @@ Pass the below arguments to the function to get the count.
 - Jirauser API Key---> API Key for the respective JIRA instance User generated inside Jira application.
 - Jiraprojectcode-> The jira project code for the respective project.
 
+# Example
+
+import {OpenBugs} from "testrailmetrics";
+
+
+'''OpenBugs.getJiraOpenBugs("https://khanaasif.testrail.io","test@testjira.com","<Jira API Key>",<"your jiraproject code">,true)
+.then(function(result) {
+    console.log(result) 
+ })'''
+
 # getJiraBlockers
 
 This function returns the Blockers present in the given jira project.
@@ -98,6 +108,16 @@ Pass the below arguments to the function to get the count.
 - Jirauser--> Provide the respective Jira account emailId.
 - Jirauser API Key---> API Key for the respective JIRA instance User generated inside Jira application.
 - Jiraprojectcode-> The jira project code for the respective project.
+
+# Example
+
+import {Blockers} from "testrailmetrics";
+
+
+'''Blockers.getJiraBlockers("https://khanaasif.testrail.io","test@testjira.com","<Jira API Key>",<"your jiraproject code">,true)
+.then(function(result) {
+    console.log(result) 
+ })'''
 
 # getJiraBacklogCount
 
@@ -111,6 +131,16 @@ Pass the below arguments to the function to get the count.
 - Jirauser API Key---> API Key for the respective JIRA instance User generated inside Jira application.
 - Jiraprojectcode-> The jira project code for the respective project.
 
+# Example
+
+import {BacklogCount} from "testrailmetrics";
+
+
+'''BacklogCount.getJiraBacklogCount("https://khanaasif.testrail.io","test@testjira.com","<Jira API Key>",<"your jiraproject code">,true)
+.then(function(result) {
+    console.log(result) 
+ })'''
+
 # getJiraBugsPerRelease
 
 This function returns the BugsPerRelease present in the Latest Release of a respective project.
@@ -122,6 +152,16 @@ Pass the below arguments to the function to get the count.
 - Jirauser--> Provide the respective Jira account emailId.
 - Jirauser API Key---> API Key for the respective JIRA instance User generated inside Jira application.
 - Jiraprojectcode-> The jira project code for the respective project.
+
+# Example
+
+import {BugsPerRelease} from "testrailmetrics";
+
+
+'''BugsPerRelease.getJiraBugsPerRelease("https://khanaasif.testrail.io","test@testjira.com","<Jira API Key>",<"your jiraproject code">,true)
+.then(function(result) {
+    console.log(result) 
+ })'''
 
 # getJiraTicketsPerRelease
 
@@ -135,6 +175,21 @@ Pass the below arguments to the function to get the count.
 - Jirauser API Key---> API Key for the respective JIRA instance User generated inside Jira application.
 - Jiraprojectcode-> The jira project code for the respective project.
 
+# Example
+
+import { ticketperlatestrelease} from "testrailmetrics";
+
+
+'''ticketperlatestrelease.getJiraticketsperlatestrelease("https://testingcompany.testco.net","test@testjira.com","<Jira API Key>",<"your jiraproject code">,true)
+.then(function(result) {
+    console.log(result) 
+ })'''
+
+
+ # TestRun
+
+ ''' npm run test '''
+- (provide the Script name in place of "test")
 
 
 
