@@ -12,11 +12,11 @@
 - Create a node project 
 - Create a package.json file using npm init -y command
 - Install the package using below command.
-- npm i testrailmetrics
+  '''npm i testrailmetrics'''
 - install the axios using below command.
-'''npm i -D axios'''
+  '''npm i -D axios'''
 - install the Dotenv by using bewlow commad.
-'''npm i -D dotenv'''
+  '''npm i -D dotenv'''
 
 # Usage
 
