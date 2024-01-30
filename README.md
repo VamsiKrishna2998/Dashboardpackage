@@ -1,5 +1,5 @@
-# DashboardPackage
- Dashboardpackage contains Metrics from the TestRail application and Jira application
+# DashboardProduct
+ DashboardProduct contains Metrics from the TestRail application and Jira application
 
 # testrailmetrics
  testrailmetrics package display the test metrics from testRail application
