@@ -1,5 +1,5 @@
 {
-  "name": "vamsidashboardpackage",
+  "name": "dashboardpackage",
   "version": "1.0.3",
   "description": "dashboardpackages",
   "main": "index.js",
