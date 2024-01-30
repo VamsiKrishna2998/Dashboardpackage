@@ -1,6 +1,6 @@
 {
   "name": "newdashboardpackage",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "dashboardpackages",
   "main": "index.js",
   "scripts": {
