@@ -1,5 +1,5 @@
 # Dashboard Product
- Dashboard Product contains Metrics from the TestRail application and Jira application
+ Dashboard Product contains Metrics from different tools like TestRail application and Jira application.
 
 # Testrailmetrics
  Testrail metrics package display the test metrics from testRail application
@@ -14,13 +14,20 @@
 - Install the package using below command.
    "npm i testrailmetrics"
 - install the axios using below command.
-   "npm i -D axios"
+ "npm i -D axios"
 - install the Dotenv by using bewlow commad.
-   "npm i -D dotenv"
+ "npm i -D dotenv"
 - install the axios logger using below command.
    "npm i axios-logger"
 - install the hotshots using bewlow command.
    "npm i hot-shots"
+
+# Sign up for New Relic if you haven't already.
+Dashboards contain graphs with real-time metrics.
+
+- Does your organization already have New Relic account if not you're just adding a new team or project? 
+- Create a new account using link (https://newrelic.com/signup).
+- Once created a account then login with valid credentials. You can click on the Dashboard and view the real-time metrics in table and graph formats.   
 
 # Usage
 
@@ -190,6 +197,9 @@ import { ticketperlatestrelease} from "testrailmetrics";
 
  ''' npm run test '''
 - (provide the Script name in place of "test")
+
+
+
 
 
 
