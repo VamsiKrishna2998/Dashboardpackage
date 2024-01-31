@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "axios-logger": "^2.7.1",
-    "hot-shots": "^10.0.0",
     "testrailmetrics": "^1.1.9"
   }
 }
