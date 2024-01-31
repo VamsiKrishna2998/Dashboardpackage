@@ -31,7 +31,7 @@ Dashboards contain graphs with real-time metrics.
 
 # Usage
 
-# get Automation & Manual Count
+# get Automation & ManualCount
 
 This functions extracts the Manual and Automation test cases count for a given project in the testrail application.
 
