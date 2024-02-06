@@ -7,19 +7,21 @@
 # Pre-Requisite
 - NodeJs  
 - Visual Studio code
+- Github
+- New Relic
 
 # Installation
 - Create a node project 
 - Create a package.json file using npm init -y command
-- Install the package using below command.
+- Install the package using command.
    "npm i testrailmetrics"
-- install the axios using below command.
+- install the axios using command.
  "npm i -D axios"
-- install the Dotenv by using bewlow commad.
+- install the Dotenv by using commad.
  "npm i -D dotenv"
-- install the axios logger using below command.
+- install the axios logger using command.
    "npm i axios-logger"
-- install the hotshots using bewlow command.
+- install the hotshots using command.
    "npm i hot-shots"
 
 # Sign up for New Relic if you haven't already.
@@ -82,7 +84,7 @@ Pass the below arguments to the function to get the count.
       `get_cases/${project.suites[0].projectId}&suite_id=${project.suites[0].suiteId}&limit=250&offset=0`
     )}'''
 
-# get Jira OpenBugs
+# get Jira OpenBugs Count
 
 This function returns the open bugs present in the given jira project.
 
@@ -104,7 +106,7 @@ import {OpenBugs} from "testrailmetrics";
     console.log(result) 
  })'''
 
-# get Jira Blockers
+# get Jira Blockers Count
 
 This function returns the Blockers present in the given jira project.
 
@@ -148,7 +150,7 @@ import {BacklogCount} from "testrailmetrics";
     console.log(result) 
  })'''
 
-# get Jira BugsPerRelease
+# get Jira BugsPerRelease Count
 
 This function returns the BugsPerRelease present in the Latest Release of a respective project.
 
@@ -170,7 +172,7 @@ import {BugsPerRelease} from "testrailmetrics";
     console.log(result) 
  })'''
 
-# get Jira TicketsPerRelease
+# get Jira TicketsPerRelease Count
 
 This function returns the TicketsPerRelease present in the Latest Release of a respective project.
 
@@ -221,6 +223,14 @@ Publishing Metrics by pulling from Testrail application and Jira application.
   schedule:
     - cron: '0 8-20/3 * * 1-5' ''' (This Scheduler is used to run the jobs from 8:00 AM to 8:00 Pm for every 3 hours from Monday to Friday)
 
+         project: Test  
+            testrail-api: https://khanaasif.testrail.io/index.php?/api/v2
+            testrail-user: TESTRAIL_USER
+            testrail-key: TESTRAIL_KEY  
+
+       - name: Test
+          run: npm run Test (Replace TESt name with project name)  
+
 # Creating yml file for Jira Metrics.
 
 - Create a yml file with relevant name eg(openbugs.yml,backlog.yml)
@@ -236,6 +246,15 @@ Publishing Metrics by pulling from Testrail application and Jira application.
 ''' on:
   schedule:
     - cron: '0 8-20/3 * * 1-5' ''' (This Scheduler is used to run the jobs from 8:00 AM to 8:00 Pm for every 3 hours from Monday to Friday)
+    
+         project: Test  
+            jira-api: https://vamsiinduri4455.atlassian.net/rest/api/3
+            jira-user: JIRA_USER
+            jira-key: JIRA_API_TOKEN
+                 
+
+          - name: Test
+          run: npm run Test (Replace TESt name with project name)   
 
 # Github 
 
