@@ -210,16 +210,19 @@ Publishing Metrics by pulling from Testrail application and Jira application.
 # Creating yml file for Testrail Metrics.
 
 - Create a yml file with relevant name eg(AutomatedManual.yml and Passfail.yml)
-- Baseurl --> The URL of the testrail instance eg(https://khanaasif.testrail.io)
-- TestRailuser--> Provide the respective TestRail account email id.
-- APIkey---> API Key for the respective Testrail User generated inside TestRail application.
 - Add the Scheduler to run the scripts.
 - To run the scripts manually add on-push command in Scheduler.
 - To run the script Automatically for a Specific time and intervals add Cron time in Scheduler.
+- Baseurl --> The URL of the testrail instance eg(https://khanaasif.testrail.io)
+- TestRailuser--> Provide the respective TestRail account email id.
+- APIkey---> API Key for the respective Testrail User generated inside TestRail application.
 - to run the script add "npm run test"  (replace test name with project name)
 
 # Example 
-''' on:
+''' 
+name: PassFAIl
+
+on:
   schedule:
     - cron: '0 8-20/3 * * 1-5' ''' (This Scheduler is used to run the jobs from 8:00 AM to 8:00 Pm for every 3 hours from Monday to Friday)
 
@@ -234,19 +237,21 @@ Publishing Metrics by pulling from Testrail application and Jira application.
 # Creating yml file for Jira Metrics.
 
 - Create a yml file with relevant name eg(openbugs.yml,backlog.yml)
-- Baseurl --> The URL of the Jira instance eg(https://testing.atlassian.net).
-- Jirauser--> Provide the respective Jira account emailId.
-- Jirauser API Key---> API Key for the respective JIRA instance User generated inside Jira application.
 - Add the Scheduler to run the scripts.
 - To run the scripts manually add on-push command in Scheduler.
 - To run the script Automatically for a Specific time and intervals add Cron time in Scheduler.
+- Baseurl --> The URL of the Jira instance eg(https://testing.atlassian.net).
+- Jirauser--> Provide the respective Jira account emailId.
+- Jirauser API Key---> API Key for the respective JIRA instance User generated inside Jira application.
 - to run the script add "npm run test"  (replace test name with project name)
 
 # Example 
-''' on:
+''' 
+name: OPEN BUGS
+on:
   schedule:
     - cron: '0 8-20/3 * * 1-5' ''' (This Scheduler is used to run the jobs from 8:00 AM to 8:00 Pm for every 3 hours from Monday to Friday)
-    
+
          project: Test  
             jira-api: https://vamsiinduri4455.atlassian.net/rest/api/3
             jira-user: JIRA_USER
