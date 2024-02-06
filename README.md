@@ -220,7 +220,7 @@ Publishing Metrics by pulling from Testrail application and Jira application.
 
 # Example 
 ''' 
-name: PassFAIl
+name: PassFail
 
 on:
   schedule:
@@ -259,17 +259,19 @@ on:
                  
 
           - name: Test
-          run: npm run Test (Replace TESt name with project name)   
+          run: npm run Test (Replace Test name with project name)   
 
 # Github 
+
+# Github Secrets
+Github Secrets are used to hide actual Username,Password and Api-key. 
 
 # Github Actions
 - Using yml file code is pushed to Github.
 - Github Actions are used to verify whether scripts are running as per Scheduled Jobs.
 - Verify whether scripts have passed or failed in Github Actions.
 
-# Github Secrets
-Github Secrets are used to hide actual Username,Password and Api-key. 
+
 
 
 
