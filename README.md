@@ -128,7 +128,7 @@ import {Blockers} from "testrailmetrics";
     console.log(result) 
  })'''
 
-# get Jira Backlog Count
+# get Jira Backlog Tickets Count
 
 This function returns the Backlog Tickets present in the given jira project.
 
